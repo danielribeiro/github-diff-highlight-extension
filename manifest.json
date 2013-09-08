@@ -1,0 +1,21 @@
+
+{
+  "name": "GH Diff Highlight",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "description": "Enables Syntax highlight for diffs on github",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://github.com/*/blob/*.obj",
+        "https://github.com/*/blob/*.obj"
+        ],
+      "css": ["styles/gh-diff-highlight.css"],
+      "js": [
+        "src/gh-diff-highlight.js"
+        "vendor/jquery-2.0.3.js"
+      ]
+    }
+  ],
+}
