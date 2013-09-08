@@ -1,6 +1,6 @@
 # github-diff-highlight-extension
 
-Chrome Extension syntax highlight diffs on github:
+Chrome Extension syntax highlight diffs on GitHub:
 
 ![](https://github.com/danielribeiro/github-diff-highlight/raw/master/docs/example.png)
 
