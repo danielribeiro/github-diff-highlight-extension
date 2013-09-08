@@ -11,9 +11,13 @@
         "http://github.com/*/blob/*.obj",
         "https://github.com/*/blob/*.obj"
         ],
-      "css": ["styles/gh-diff-highlight.css"],
+      "css": [
+        "styles/prettify.css",
+        "styles/style.css",
+        "styles/theme-balupton.css"
+      ],
       "js": [
-        "src/gh-diff-highlight.js"
+        "src/gh-diff-highlight.js",
         "vendor/jquery-2.0.3.js"
       ]
     }
