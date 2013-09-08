@@ -29,5 +29,5 @@ $(function() {
     sel(".diff-line-code pre").addClass("highlight");
     sel(".file-diff-line.gd .diff-line-code pre").css({backgroundColor: "#FDD"});
     sel(".file-diff-line.gi .diff-line-code pre").css({backgroundColor: "#DFD"});
-    setTimeout(function(){ $.SyntaxHighlighter.init({lineNumbers: false}); }, 200);
+    $.SyntaxHighlighter.init({lineNumbers: false});
 });
