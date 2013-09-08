@@ -27,7 +27,5 @@ $(function() {
         t.find("pre").text(text);
     }) 
     sel(".diff-line-code pre").addClass("highlight");
-    sel(".file-diff-line.gd .diff-line-code pre").css({backgroundColor: "#FDD"});
-    sel(".file-diff-line.gi .diff-line-code pre").css({backgroundColor: "#DFD"});
     $.SyntaxHighlighter.init({lineNumbers: false});
 });

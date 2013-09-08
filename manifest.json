@@ -13,7 +13,8 @@
       "css": [
         "styles/prettify.css",
         "styles/style.css",
-        "styles/theme-balupton.css"
+        "styles/theme-balupton.css",
+        "styles/gh-diff-highlight.css"
       ],
       "js": [
         "vendor/jquery-2.0.3.js",
