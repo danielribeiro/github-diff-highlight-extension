@@ -17,8 +17,12 @@
         "styles/theme-balupton.css"
       ],
       "js": [
-        "src/gh-diff-highlight.js",
-        "vendor/jquery-2.0.3.js"
+        "vendor/jquery-2.0.3.js",
+        "vendor/core.console.js",
+        "vendor/jquery.appendscriptstyle.js",
+        "vendor/jquery.syntaxhighlighter.js",
+        "vendor/prettify.js",
+        "src/gh-diff-highlight.js"
       ]
     }
   ],
