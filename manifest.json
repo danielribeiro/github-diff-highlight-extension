@@ -8,8 +8,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://github.com/*/blob/*.obj",
-        "https://github.com/*/blob/*.obj"
+        "http://github.com/*",
+        "https://github.com/*"
         ],
       "css": [
         "styles/prettify.css",
