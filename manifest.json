@@ -7,8 +7,14 @@
   "content_scripts": [
     {
       "matches": [
-        "http://github.com/*",
-        "https://github.com/*"
+        "http://github.com/*/commit/*",
+        "http://github.com/*/pulls/*",
+        "http://github.com/*/pull/*",
+        "http://github.com/*/compare/*",
+        "https://github.com/*/commit/*",
+        "https://github.com/*/pulls/*",
+        "https://github.com/*/pull/*",
+        "https://github.com/*/compare/*"
         ],
       "css": [
         "styles/prettify.css",
