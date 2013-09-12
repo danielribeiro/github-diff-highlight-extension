@@ -17,9 +17,9 @@
         "https://github.com/*/compare/*"
         ],
       "css": [
-        "styles/prettify.css",
-        "styles/style.css",
-        "styles/theme-balupton.css",
+        "vendor/styles/prettify.css",
+        "vendor/styles/style.css",
+        "vendor/styles/theme-balupton.css",
         "styles/gh-diff-highlight.css"
       ],
       "js": [
