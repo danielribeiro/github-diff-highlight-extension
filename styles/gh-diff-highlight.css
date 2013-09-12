@@ -1,12 +1,7 @@
-.gd .diff-line-code pre.highlight {
-    background-color: #FDD !important;
+.diff-line-code pre.highlight {
+    background: transparent !important;
 }
 
-.gi .diff-line-code pre.highlight {
-    background-color: #DFD !important;
-}
-
-.diff-line-code pre.highlight:hover {
-    background-color: #f6e8b5 !important;
-    border-color: #f0db88 !important;
+.diff-line-code pre.highlight {
+    background: transparent !important;
 }
