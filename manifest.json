@@ -1,7 +1,7 @@
 {
   "name": "GH Diff Highlight",
   "manifest_version": 2,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Enables Syntax highlight for diffs on GitHub",
 
   "content_scripts": [
