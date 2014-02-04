@@ -16,6 +16,15 @@ $.SyntaxHighlighter.load = function() {
 }
 
 $(function() {
-    $(".diff-line-pre").addClass("highlight");
-    $.SyntaxHighlighter.init({lineNumbers: false});
+    var applySyntaxHighlighter = function(){
+      $(".diff-line-pre").addClass("highlight");
+      $.SyntaxHighlighter.init({lineNumbers: false});
+    };
+
+    applySyntaxHighlighter();
+
+    // set event-handler for pjax loading
+    $(document).on('pjax:success', function(){
+      setTimeout(applySyntaxHighlighter, 100);
+    });
 });
