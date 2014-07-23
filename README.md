@@ -10,7 +10,7 @@ The project is based on [jquery-syntaxhighlighter](http://balupton.github.com/jq
 
 My fork of [jquery-syntaxhighlighter](https://github.com/balupton/jquery-syntaxhighlighter) is included inline in the project. It essentially removes borders on the highlighted pre elements.
 
-To buid the extension, just run
+To build the extension, just run
 
 ```bash
 $ ./package.sh
