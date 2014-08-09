@@ -15,16 +15,27 @@ $.SyntaxHighlighter.load = function() {
     return this;
 }
 
+var escapeNbsp = function(str) { return str.replace(/&nbsp;/g, "\x11"); }
+var unEscapeNbsp = function(str) { return str.replace(/\x11/g, " "); }
+
 $(function() {
-    var applySyntaxHighlighter = function(){
-      $(".diff-line-pre").addClass("highlight");
-      $.SyntaxHighlighter.init({lineNumbers: false});
-    };
-
-    applySyntaxHighlighter();
-
+    var applySyntaxHighlighter = function () {
+        console.log("Applying SyntaxHighlighter from https://chrome.google.com/webstore/detail/gh-diff-highlight/gjljgldconccfbldbnnpbgahpckhjcfj")
+        $(".diff-line-code").each(function() {
+            var t = $(this);
+            t.html(escapeNbsp(t.html()))
+            var text = unEscapeNbsp(t.text());
+            t.contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove()
+            t.contents().filter(function() { return this.nodeName == "SPAN"; }).remove()
+            t.append("<pre></pre>");
+            t.find("pre").text(text);
+        })
+        $(".diff-line-code pre").addClass("highlight");
+        $.SyntaxHighlighter.init({lineNumbers: false});
+    }
+    applySyntaxHighlighter()
     // set event-handler for pjax loading
-    $(document).on('pjax:success', function(){
-      setTimeout(applySyntaxHighlighter, 100);
+    $(document).on('pjax:success', function() {
+        setTimeout(applySyntaxHighlighter, 100);
     });
 });
