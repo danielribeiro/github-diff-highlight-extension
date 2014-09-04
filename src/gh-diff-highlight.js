@@ -21,7 +21,7 @@ var unEscapeNbsp = function(str) { return str.replace(/\x11/g, " "); }
 $(function() {
     var applySyntaxHighlighter = function () {
         console.log("Applying SyntaxHighlighter from https://chrome.google.com/webstore/detail/gh-diff-highlight/gjljgldconccfbldbnnpbgahpckhjcfj")
-        $(".diff-line-code").each(function() {
+        $(".blob-code").each(function() {
             var t = $(this);
             t.html(escapeNbsp(t.html()))
             var text = unEscapeNbsp(t.text());
@@ -30,7 +30,7 @@ $(function() {
             t.append("<pre></pre>");
             t.find("pre").text(text);
         })
-        $(".diff-line-code pre").addClass("highlight");
+        $(".blob-code pre").addClass("highlight");
         $.SyntaxHighlighter.init({lineNumbers: false});
     }
     applySyntaxHighlighter()
