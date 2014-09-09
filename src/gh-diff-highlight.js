@@ -23,14 +23,10 @@ $(function() {
         console.log("Applying SyntaxHighlighter from https://chrome.google.com/webstore/detail/gh-diff-highlight/gjljgldconccfbldbnnpbgahpckhjcfj")
         $(".blob-code").each(function() {
             var t = $(this);
-            t.html(escapeNbsp(t.html()))
-            var text = unEscapeNbsp(t.text());
-            t.contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove()
-            t.contents().filter(function() { return this.nodeName == "SPAN"; }).remove()
-            t.append("<pre></pre>");
-            t.find("pre").text(text);
+            var commentButton = t.find("b.add-line-comment:first").detach();
+            t.wrapInner("<pre class='highlight'></pre>");
+            commentButton.prependTo(t)
         })
-        $(".blob-code pre").addClass("highlight");
         $.SyntaxHighlighter.init({lineNumbers: false});
     }
     applySyntaxHighlighter()
