@@ -4,6 +4,11 @@
   "version": "1.0.7",
   "description": "Enables Syntax highlight for diffs on GitHub",
 
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
   "content_scripts": [
     {
       "matches": [
