@@ -1,23 +1,23 @@
 {
-  "name": "GH Diff Highlight",
+  "name": "GitHub Diff Syntax Highlighter",
   "manifest_version": 2,
   "version": "1.0.7",
-  "description": "Enables Syntax highlight for diffs on GitHub",
-
+  "description": "Enables syntax highlight for diffs on GitHub",
+  "homepage_url": "https://github.com/danielribeiro/github-diff-highlight-extension",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
   "content_scripts": [
     {
       "matches": [
-        "http://github.com/*/commits/*",
-        "http://github.com/*/commit/*",
-        "http://github.com/*/pulls/*",
-        "http://github.com/*/pull/*",
-        "http://github.com/*/compare/*",
         "https://github.com/*/commits/*",
         "https://github.com/*/commit/*",
         "https://github.com/*/pulls/*",
         "https://github.com/*/pull/*",
         "https://github.com/*/compare/*"
-        ],
+      ],
       "css": [
         "vendor/styles/prettify.css",
         "vendor/styles/style.css",
