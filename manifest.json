@@ -7,16 +7,16 @@
   "content_scripts": [
     {
       "matches": [
-        "http://github.com/*/commits/*",
-        "http://github.com/*/commit/*",
-        "http://github.com/*/pulls/*",
-        "http://github.com/*/pull/*",
-        "http://github.com/*/compare/*",
-        "https://github.com/*/commits/*",
-        "https://github.com/*/commit/*",
-        "https://github.com/*/pulls/*",
-        "https://github.com/*/pull/*",
-        "https://github.com/*/compare/*"
+        "http://*/*/commits/*",
+        "http://*/*/commit/*",
+        "http://*/*/pulls/*",
+        "http://*/*/pull/*",
+        "http://*/*/compare/*",
+        "https://*/*/commits/*",
+        "https://*/*/commit/*",
+        "https://*/*/pulls/*",
+        "https://*/*/pull/*",
+        "https://*/*/compare/*"
         ],
       "css": [
         "vendor/styles/prettify.css",
