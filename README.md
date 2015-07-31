@@ -1,5 +1,7 @@
 # github-diff-highlight-extension
 
+**Important:** this project is deprecated, since GitHub supports this natively: https://github.com/blog/1932-syntax-highlighted-diffs
+
 [Chrome Extension](https://chrome.google.com/webstore/detail/gh-diff-highlight/gjljgldconccfbldbnnpbgahpckhjcfj) syntax highlight diffs on GitHub:
 
 ![](https://github.com/danielribeiro/github-diff-highlight/raw/master/docs/example.png)
